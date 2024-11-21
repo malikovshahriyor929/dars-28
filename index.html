@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="./img/logo.png" alt="" />
+        <nav class="social">
+          <img src="./svg/google.svg" alt="" />
+          <img src="./svg/instagram.svg" alt="" />
+          <img src="./svg/invision.svg" alt="" />
+        </nav>
+        <nav>
+          <input id="check" type="checkbox" />
+          <ul class="links">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Специалисты</a></li>
+            <li><a href="#">Пациентам</a></li>
+            <li><a href="#">Контакты</a></li>
+            <nav class="location location2">
+              <img src="./svg/location_outline.svg" alt="location" />
+              <a href="https://maps.app.goo.gl/KZc63zUrw3FfXvR28"
+                >Чебоксары, <br />
+                Энтузиастов 1А
+              </a>
+            </nav>
+            <nav class="location location2">
+              <img src="./svg/phone.svg" alt=" phone" />
+              <a href="tel:+7900 333 10 40 ">+7900 333 10 40 </a>
+            </nav>
+
+            <label class="close" for="check"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+          </ul>
+        </nav>
+        <nav class="connection">
+          <nav class="location">
+            <img src="./svg/location_outline.svg" alt="location" />
+            <a href="https://maps.app.goo.gl/KZc63zUrw3FfXvR28"
+              >Чебоксары, <br />
+              Энтузиастов 1А
+            </a>
+          </nav>
+          <nav class="location calendar">
+            <img src="./svg/calendar.svg" alt="calendar" />
+            <p>с 09:00 - 20:00</p>
+            <span> пн-сб </span>
+          </nav>
+          <nav class="location">
+            <img src="./svg/phone.svg" alt=" phone" />
+            <a href="tel:+7900 333 10 40 ">+7900 333 10 40 </a>
+          </nav>
+        </nav>
+
+        <button class="btn_header">Заказать звонок</button>
+
+        <div class="mobile">
+          <button class="btn_header2">Заказать звонок</button>
+          <label class="bar" for="check">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase_items">
+          <div class="showcase_txt">
+            <p>— Стоматология в Чебоксарах</p>
+            <h1>Лечение зубов в тот же день</h1>
+            <p>
+              Мы проведем полную консультацию, <br />
+              профессиональную гигиену полости рта, <br />
+              лечение зубов и десен
+            </p>
+            <button class="btn_showcase">Записаться на приём</button>
+          </div>
+          <div class="showcase_item">
+            <div class="blur_icons">
+              <img src="./svg/showcase1.svg" alt="" />
+              <p>
+                Команда квалифицированных <br />
+                специалистов
+              </p>
+            </div>
+            <div class="blur_icons">
+              <img src="./svg/showcase2.svg" alt="" />
+              <p>
+                3_стоматологических <br />
+                кабинета
+              </p>
+            </div>
+            <div class="blur_icons">
+              <img src="./svg/showcase3.svg" alt="" />
+              <p>
+                Удобное <br />
+                расположение
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="container">
+        <div class="grid_title">
+          <h1>Услуги</h1>
+          <p>Мы постарались сделать прайс, максимально простым и понятным.</p>
+        </div>
+        <div class="type_parent">
+          <div class="type type1">
+            <img src="./svg/teeth.svg" alt="" />
+            <p>Лечение зубов</p>
+          </div>
+          <div class="type">
+            <img src="./img/card2.png" alt="" />
+            <p>Гигиена</p>
+          </div>
+          <div class="type">
+            <img src="./img/card3.png" alt="" />
+            <p>Брекеты</p>
+          </div>
+          <div class="type">
+            <img src="./img/card4.png" alt="" />
+            <p>
+              Детская <br />
+              стоматология
+            </p>
+          </div>
+          <div class="type">
+            <img src="./img/card5.png" alt="" />
+            <p>Импланты</p>
+          </div>
+          <div class="type">
+            <img src="./img/card6.png" alt="" />
+            <p>Виниры</p>
+          </div>
+          <div class="type">
+            <img src="./img/card7.png" alt="" />
+            <p>Коронки</p>
+          </div>
+          <div class="type">
+            <img src="./img/card8.png" alt="" />
+            <p>Хирургия</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="swiper_l">
+      <div class="container">
+        <h1 class="swiper_title">Нам доверяют пациенты</h1>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper_dif">
+                <span>1</span>
+                <h2>Честные цены, без хитрых уловок</h2>
+                <p>Фиксируем цены в плане лечения, не повышаем в процессе.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_dif">
+                <span>2</span>
+                <h2>Опытные Врачи</h2>
+                <p>
+                  Врачи постоянно совершенствуются в своей специальности,
+                  несмотря на богатый опыт работы.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_dif">
+                <span>3</span>
+                <h2>Комфортные условия</h2>
+                <p>Уютная обстановка и отзывчивый персонал сделают поход к</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_dif">
+                <span>1</span>
+                <h2>Честные цены, без хитрых уловок</h2>
+                <p>Фиксируем цены в плане лечения, не повышаем в процессе.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_dif">
+                <span>2</span>
+                <h2>Опытные Врачи</h2>
+                <p>
+                  Врачи постоянно совершенствуются в своей специальности,
+                  несмотря на богатый опыт работы.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_dif">
+                <span>3</span>
+                <h2>Комфортные условия</h2>
+                <p>Уютная обстановка и отзывчивый персонал сделают поход к</p>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <div class="swiper-pagination1"></div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="navigation">
+          <div class="prev"><img src="./svg/arrow_prev.svg" alt="" /></div>
+          <div class="next"><img src="./svg/arrow_next.svg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <section class="opa">
+      <div class="container">
+        <div class="opa_txt">
+          <h1>
+            При фиксации брекетов на обе челюсти <br />
+            получи сертификат на 7000 рублей
+          </h1>
+          <p>
+            Укажите вой номер телефона, мы перезвоним <br />
+            и подберем для вас удобное время приёма. <br />
+            Или позвоните нам сами — <span> +7 900 333 10 40 </span>
+          </p>
+          <div class="number">
+            <input placeholder="Телефон" type="number" />
+            <button class="btn_opa">Записаться на прием</button>
+          </div>
+          <h4>
+            Записываясь на услугу вы даёте согласие на
+            <span
+              >обработку <br />
+              своих персональных данных
+            </span>
+          </h4>
+        </div>
+        <div class="opa_img">
+          <img src="./img/opa.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="voxel">
+      <div class="container">
+        <div class="voxel_title">
+          <h1>Лечение у нас</h1>
+          <p>
+            Просто и безболезненно, с предоставлением всего спектра
+            стоматологических услуг
+          </p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="voxel_swiper">
+                <div class="voxel_txt">
+                  <div class="logo_voxel">
+                    <img src="./img/logo.png" alt="" />
+                    <p>клиника</p>
+                  </div>
+                  <p>
+                    предоставляет весь спектр стоматологических услуг таких как
+                    :
+                  </p>
+                  <div class="text">
+                    <p>Терапия</p>
+                    <p>Хирургия</p>
+                    <p>Ортодонтия</p>
+                  </div>
+                  <div class="text">
+                    <p>Детская стоматология</p>
+                    <p>Ортопедия</p>
+                  </div>
+                  <div class="texts">
+                    <p>
+                      Приоритетным направлением является восстановление <br />
+                      функциональных возможностей зубочелюстной системы<br />
+                      и профилактика заболевания полости рта.
+                    </p>
+                  </div>
+                  <div class="products">
+                    <img src="./img/voxel.png" alt="" />
+                    <img class="imgfd" src="./img/voxel2.png" alt="" />
+                    <img src="./img/voxel3.png" alt="" />
+                  </div>
+                </div>
+                <img src="./img/opaswiper.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="voxel_swiper">
+                <div class="voxel_txt">
+                  <div class="logo_voxel">
+                    <img src="./img/logo.png" alt="" />
+                    <p>клиника</p>
+                  </div>
+                  <p>
+                    предоставляет весь спектр стоматологических услуг таких как
+                    :
+                  </p>
+                  <div class="text">
+                    <p>Терапия</p>
+                    <p>Хирургия</p>
+                    <p>Ортодонтия</p>
+                  </div>
+                  <div class="text">
+                    <p>Детская стоматология</p>
+                    <p>Ортопедия</p>
+                  </div>
+                  <div class="texts">
+                    <p>
+                      Приоритетным направлением является восстановление <br />
+                      функциональных возможностей зубочелюстной системы<br />
+                      и профилактика заболевания полости рта.
+                    </p>
+                  </div>
+                  <div class="products">
+                    <img src="./img/voxel.png" alt="" />
+                    <img class="imgfd" src="./img/voxel2.png" alt="" />
+                    <img src="./img/voxel3.png" alt="" />
+                  </div>
+                </div>
+                <img src="./img/opaswiper.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="arrows">
+            <div class="prev2">
+              <img src="./img/prev.png" alt="" />
+            </div>
+            <div class="next2">
+              <img src="./img/next.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="doctor">
+      <div class="container">
+        <div class="voxel_title">
+          <h1>Специалисты</h1>
+          <p>
+            Просто и безболезненно, с предоставлением всего спектра
+            стоматологических услуг
+          </p>
+        </div>
+        <div class="pens">
+          <div class="pen">
+            <div class="doctor_txt">
+              <h2>Шац Дарья Сергеевна</h2>
+              <p>
+                Директор, Главный врач , Врач ортодонт <br />Стаж работы 11 лет
+              </p>
+            </div>
+            <img
+              src="./img/beautiful-young-woman-doctor-posing-white-medical-gown_1-removebg 2.png"
+              alt=""
+            />
+          </div>
+          <div class="pen">
+            <div class="doctor_txt">
+              <h2>Шац Дарья Сергеевна</h2>
+              <p>
+                Директор, Главный врач , Врач ортодонт <br />Стаж работы 11 лет
+              </p>
+            </div>
+            <img
+              src="./img/beautiful-young-woman-doctor-posing-white-medical-gown_1-removebg 2.png"
+              alt=""
+            />
+          </div>
+          <div class="pen pen2">
+            <div class="doctor_txt">
+              <h2>Лыщиков Павел Анатольевич</h2>
+              <p>
+                Директор, Главный врач , Врач ортодонт <br />Стаж работы 11 лет
+              </p>
+            </div>
+            <img
+              src="./img/dentist-man-holding-tools-isolated-white-wall-laughing 1.png"
+              alt=""
+            />
+          </div>
+          <div class="pen pen2">
+            <div class="doctor_txt">
+              <h2>Шац Дарья Сергеевна</h2>
+              <p>
+                Директор, Главный врач , Врач ортодонт <br />Стаж работы 11 лет
+              </p>
+            </div>
+            <img
+              src="./img/dentist-man-holding-tools-isolated-white-wall-laughing 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="certificat">
+      <div class="container">
+
+<div class="voxel_title">
+  <h1>Сертификаты, награды и дипломы</h1>
+</div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/cetificat.png" alt="" />
+            </div>
+          </div>
+          <div class="prev3">
+            <img src="./img/prev.png" alt="" />
+          </div>
+          <div class="next3"><img src="./img/next.png" alt="" /></div>
+          
+        </div>
+      </div>
+    </section>
+    <footer class="opa">
+      <div class="container">
+        <div class="opa_txt">
+          <h1>
+            При фиксации брекетов на обе челюсти <br />
+            получи сертификат на 7000 рублей
+          </h1>
+          <p>
+            Укажите вой номер телефона, мы перезвоним <br />
+            и подберем для вас удобное время приёма. <br />
+            Или позвоните нам сами — <span> +7 900 333 10 40 </span>
+          </p>
+          <div class="number">
+            <input placeholder="Телефон" type="number" />
+            <button class="btn_opa">Записаться на прием</button>
+          </div>
+          <h4>
+            Записываясь на услугу вы даёте согласие на
+            <span
+              >обработку <br />
+              своих персональных данных
+            </span>
+          </h4>
+        </div>
+        <div class="opa_img">
+          <img src="./img/lithuanian-woman-dentist-holding-tools-isolated-making-phone-gesture-call-me-back-sign_1-removebg 1.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="pr">
+          <img src="./svg/google.svg" alt="">
+          <img src="./svg/instagram.svg" alt="">
+          <img src="./svg/invision.svg" alt="">
+        </div>
+        <div>
+          <p>ООО «Дент», лицензия №ЛО-86-8681-01868686047 от 13.02.2099
+            <br> © 2018-2021</p>
+        </div>
+        <img src="./img/logo.png" alt="">
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+        breakpoints: {
+          400: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+      swiper.on("slideChange", function () {
+        var progress = ((swiper.realIndex + 1) / swiper.slides.length) * 100;
+        var progressbar = document.querySelector(".swiper-pagination1");
+        progressbar.style.setProperty("--progress-width", progress + "%"); // Kenglikni foizda yangilash
+      });
+
+      // Init Swiper
+      var swiper = new Swiper(".mySwiper2", {
+        // Install Plugin To Swiper
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        navigation: {
+          nextEl: ".next2",
+          prevEl: ".prev2",
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".next3",
+          prevEl: ".prev3",
+        },
+        autoplay: {
+    delay: 2000,
+  },
+        breakpoints: {
+          450: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

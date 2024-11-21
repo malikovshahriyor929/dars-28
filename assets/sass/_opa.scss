@@ -1,0 +1,101 @@
+@use "./placeholder" as *;
+.opa{
+  margin-top: 200px;
+  padding-top: -100px;
+  background: linear-gradient(45deg, #e6f2ff 0%, #faf1ed 100%);
+  // height: 562px;
+}
+
+.opa > div {
+  display: flex;
+  align-items: center;
+}
+
+
+.opa_img{
+  margin-top: -170px;
+  position: static;
+  z-index: 999;
+}
+.opa_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  h1 {
+    font-family: "Panton", sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 2.7vw, 34px);
+    color: #000;
+  }
+  p{
+    font-family: "Arial", sans-serif;
+font-weight: 400;
+font-size: clamp(16px, 1.8px, 24px);
+line-height: 1.3049;
+color: #262626;
+span{
+  color: #0079ff;
+}
+  }
+  h4{
+    font-weight: 400;
+font-size: clamp(16px, 1.8px, 18px);
+line-height: 1.3049;
+color: #4e4e4e;
+span{
+  text-decoration: underline;
+  
+}
+  }
+}
+.number{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  input{
+border: none;
+outline: none;
+padding: 15px;
+  }
+  button{
+    @include btn-blue(30% , 47px);
+    font-size:clamp(14px, 1.8px, 24px);
+  }
+}
+@media(max-width:1052px){
+  .opa > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .opa_txt{
+    width: 100%;
+    padding: 30px o;
+    br{
+      display: none;
+    }
+
+  }
+  .opa_img{
+  display: none;
+  }
+}
+@media(max-width:450px){
+  .number{
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    button{
+      @include btn-blue(80% , 47px);
+      font-size:clamp(14px, 1.8px, 24px);
+    }
+    input{
+      border: none;
+      outline: none;
+      padding: 15px;
+      width: 80%;
+        }
+  }
+}

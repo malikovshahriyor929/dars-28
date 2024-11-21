@@ -1,0 +1,148 @@
+@use "./placeholder" as *;
+
+.logo_voxel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img {
+    height: 51px;
+    width: 57px;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: clamp(16px, 1.4px, 20px);
+    color: #1a3444;
+  }
+}
+.voxel_swiper {
+  margin-top: 70px;
+}
+.voxel_txt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  p {
+    font-weight: 400;
+    font-size: clamp(16px, 1.4px, 20px);
+
+    color: #242424;
+  }
+}
+.text {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  p {
+    font-weight: 400;
+    font-size: clamp(16px, 1.4px, 20px);
+    color: #242424;
+  }
+}
+.texts {
+  font-weight: 400;
+  font-size: clamp(16px, 1.4px, 20px);
+  color: #242424;
+}
+.products {
+  display: flex;
+  img {
+    width: 100%;
+    height: 62px;
+  }
+}
+.imgfd {
+  height: 82px;
+  width: 82px;
+  position: static;
+}
+.voxel_swiper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: #fbfbfb;
+
+  
+  & > img {
+    // width: 100%;
+    width:50%;
+    object-fit: cover;
+  }
+}
+.prev2,
+.next2 {
+    background: #fbfbfb;
+
+    img{
+        height: 45px;
+        width: 45px;
+    background: #fbfbfb;
+
+    }
+}
+.voxel{
+    background: #fbfbfb;
+}
+.arrows {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  z-index: 999;
+  top: 0;
+  right: 0;
+}
+.voxel{
+    margin-top: 50px;
+}
+.voxel_title{
+    margin: 20px 0;
+    h1{
+        
+    font-family: "Panton", sans-serif;
+    font-size: clamp(24px, 3.4vw, 48px);
+    font-weight: 700;
+    color: #12354b;}
+    p{
+        font-weight: 400;
+        font-size: clamp(16px, 1.8px, 24px);
+
+        color: #737373;   
+    }
+}
+@media(max-width:900px){
+    .voxel_swiper {
+         > img{
+            display: none;
+        }
+    }
+}
+@media(max-width:520px){
+    .products{
+        display: none;
+    }
+}
+@media(max-width:350px){
+    .text {
+        display: flex;
+        gap: 20px;
+        padding: 0px;
+        p {
+          font-weight: 400;
+          font-size: clamp(16px, 1.4px, 20px);
+          color: #242424;
+        }
+      }
+}
+@media(max-width:350px){
+    .text {
+        display: flex;
+        gap: 10px;
+        padding: 0px;
+        p {
+          font-weight: 400;
+          font-size: clamp(16px, 1.4px, 20px);
+          color: #242424;
+        }
+      }
+}

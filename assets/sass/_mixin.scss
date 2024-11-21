@@ -1,0 +1,10 @@
+@mixin btn-blue( $w,$h){
+    border-radius: 3px;
+width: $w;
+height: $h;
+    background: #38bcea;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: none;
+}

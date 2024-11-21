@@ -1,0 +1,21 @@
+@use "./placeholder" as *;
+
+.footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0;
+}
+.pr{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media ( max-width:700px){
+    .footer > div {
+        img{
+            display: none;
+        }
+    }
+}

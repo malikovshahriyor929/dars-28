@@ -1,0 +1,144 @@
+@use "./placeholder" as *;
+
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #aaa;
+    transition: 0.5s;
+    &:hover {
+      color: #01678a;
+    }
+  }
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  a {
+    font-weight: 500;
+    font-size: 15px;
+    color: #474747;
+  }
+  p {
+    font-family: "Panton", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: right;
+    color: #12354b;
+  }
+}
+.connection {
+  display: flex;
+  gap: 20px;
+}
+.close {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right:  30px;
+//   background-color: red;
+}
+.bar {
+  display: none;
+}
+.btn_header {
+  @include btn-blue(10%, 41px);
+}
+.btn_header2 {
+    @include btn-blue(120px, 41px);
+    
+  }
+.social {
+  display: flex;
+  gap: 10px;
+}
+#check {
+  display: none;
+}
+.location2{
+    display: none;
+}
+.btn_header2{
+    display: none;
+}
+@media (max-width: 1300px) {
+  .calendar,
+  .social {
+    display: none;
+  }
+  .btn_header {
+    @include btn-blue(15%, 41px);
+  }
+}
+@media (max-width: 1000px) {
+  .location {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .btn_header {
+    @include btn-blue(18%, 37px);
+  }
+}
+@media (max-width: 700px) {
+  .bar {
+    display: block;
+  }
+  .location2{
+    display: block;
+  }
+  .btn_header{
+    display: none;
+  }
+  .btn_header2{
+    display: block;
+  }
+  .mobile{
+display: flex;
+align-items: center;
+gap: 30px;
+  }
+  .links {
+    position: fixed;
+    top: -100%;
+    right: -100%;
+    z-index: 999;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  .close{
+    display: block;
+   
+  }
+  #check:checked ~ .bar{
+    display: none;
+  }
+  #check:checked ~ .links {
+    right: 0;
+    top: 0;
+  }
+}
+@media (max-width: 450px){
+.btn_header2{
+    @include btn-blue(110px, 30px);
+font-size: 12px;
+}
+}
